@@ -4,9 +4,10 @@ const ps = require('powershell');
 const app = express();
 
 const servers = [
-  { name: 'Server1', status: 'up' },
-  { name: 'Server2', status: 'down' },
-  { name: 'Server3', status: 'up' },
+  { name: 'VXSQL', status: 'up' },
+  { name: 'VXDIRSRV', status: 'down' },
+  { name: 'VXDIAL', status: 'up' },
+  { name: 'VXTCPA', status: 'up' },
 ];
 
 app.get('/api/servers', (req, res) => {
